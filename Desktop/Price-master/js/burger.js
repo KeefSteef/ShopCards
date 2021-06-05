@@ -1,1 +1,0 @@
-let burger=document.querySelector(".menu__burger");menu=document.querySelector(".header__menu"),li=document.querySelectorAll(".header__menu li"),burger.addEventListener("click",()=>{""==menu.style.height||"0px"==menu.style.height?(menu.style.height="150px",li.forEach(e=>{e.style.display="block"})):(menu.style.height="0px",li.forEach(e=>{e.style.display="none"}))});
