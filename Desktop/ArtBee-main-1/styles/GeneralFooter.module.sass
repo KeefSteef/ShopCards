@@ -1,0 +1,58 @@
+@import '_mixins.sass'
+
+.footer
+  display: flex
+  position: fixed
+  z-index: 5024
+  margin-top: -80px
+  width: 100%
+  justify-content: space-between
+  align-items: center
+
+  a
+    padding: 10px 25px
+    margin: 25px
+    font-size: 14px
+    @include defaultButton
+
+  a:nth-child(1)
+    background: #FECC19
+
+  a:nth-child(2)
+    border: solid 1.5px #000
+
+
+.doScrollContainer
+  margin-right: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  p
+    text-transform: uppercase
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    color: #BDBDBD
+    margin-top: 10px
+
+.progressBar
+  overflow: hidden
+  width: 100px
+  background: rgb(210,210,210)
+  height: 3px
+
+.runner
+  width: 30px
+  height: 3px
+  background: #4F5A6A
+  animation: runnBar 2s infinite
+
+
+@keyframes runnBar
+  0%,100%
+    transform: translateX(85px)
+
+  50%
+    transform: translateX(-15px)
+
