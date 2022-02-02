@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import "_mixins.sass"
+
+
+.generalHomeContainer
+  width: 100%
+  white-space: pre-wrap !important
+  display: block
+  position: relative
+  height: 100vh
+  min-width: 100vw
+
+.backImg
+  z-index: -5
+
+.homeInfoContainer
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  font-family: 'Montserrat', sans-serif
+  height: 100vh
+
+.homeTitle
+  @include defaultTitles
+
+.homeInfo
+  max-width: 3000px
+  position: relative
+  margin-right: 450px
+  p
+    margin-top: 70px
+    max-width: 320px
+    font-size: 14px
+
+  p:nth-child(3)
+    margin-top: 25px
+
+.infoContainer
+  width: 100%
+  display: flex
+  justify-content: flex-end
+
+@media screen and (max-width: 1700px)
+  .homeInfo
+    position: relative
+    margin-right: 330px
+

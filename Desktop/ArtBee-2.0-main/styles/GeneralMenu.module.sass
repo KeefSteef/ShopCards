@@ -1,0 +1,223 @@
+.generalMenuContainer
+  min-width: 100vw
+  opacity: 0
+  z-index: 200
+  position: absolute
+
+.menuHeaderNavbar
+  display: flex
+  justify-content: space-between
+
+.navbarCloseIcon
+  cursor: pointer
+  background: #282828
+  width: 120px
+  display: flex
+  height: 91px
+  justify-content: center
+  align-items: center
+
+.navbarBrandIcon
+  padding-left: 26px
+
+.menuHeaderContainer
+  position: absolute
+  z-index: 50
+  width: 100%
+
+.menuMainContainer
+  display: flex
+  width: 100%
+  height: 100vh
+
+.menuGreetingsInfoContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: 635px
+  height: 100vh
+  background: #282828
+
+.imgContainer
+  height: 100vh
+  position: absolute
+  z-index: 20
+  width: 100%
+
+.menuGreetingsInfo
+  display: flex
+  z-index: 40
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  height: 400px
+
+.greetingsText
+  font-family: Montserrat, sans-serif
+  display: flex
+  margin-bottom: 50px
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+  h1
+    color: #ffffff
+    text-align: left
+    font-size: 48px
+
+  p
+    font-size: 14px
+    margin-top: 45px
+    max-width: 233px
+    color: #828282
+
+.greetingsMail
+  a
+    font-family: Lato,sans-serif
+    color: #FECC19
+    text-transform: uppercase
+    text-decoration: none
+
+.greetingsPhoneContacts
+  margin-top: 15px
+  color: #ffffff
+  font-size: 13px
+  font-family: Lato,sans-serif
+  p
+    margin-top: 10px
+
+.greetingsStreet
+  color: #828282
+  letter-spacing: 0.03em
+  line-height: 24px
+  margin-top: 20px
+  font-family: Lato,sans-serif
+
+.greetingsContacts
+  margin-top: 150px
+
+.menuSelectContainer
+  display: flex
+  background: #E5E5E5
+  width: 100%
+  align-items: center
+  justify-content: flex-start
+
+.menuSelectInfoContainer
+  display: flex
+  z-index: 50
+  margin-top: 50px
+
+.selectInfo
+  margin-left: 200px
+  font-size: 48px
+  font-family: Montserrat,sans-serif
+  h2
+    display: flex
+    margin-top: 50px
+    color: #333333
+  h2:nth-last-child(1)
+    margin-top: 150px
+
+.menuSelectInfoContainer
+  .menuSelectInfo:nth-child(1)
+    .selectInfo
+      h2::after
+          content: ''
+          position: absolute
+          width: 400px
+          background: #E0E0E0
+          height: 1.5px
+          margin-top: 100px
+          margin-left: -30px
+    .selectInfo
+      h2:nth-child(1)
+        &::before
+            content: 'I'
+            position: absolute
+            color: #FECC19
+            font-family: Montserrat,sans-serif
+            font-size: 15px
+            margin-left: -30px
+            margin-top: 15px
+      h2:nth-child(2)
+        &::before
+          content: 'II'
+          position: absolute
+          color: #FECC19
+          font-family: Montserrat,sans-serif
+          font-size: 15px
+          margin-left: -30px
+          margin-top: 15px
+      h2:nth-child(3)
+        &::before
+          content: 'III'
+          position: absolute
+          color: #FECC19
+          font-family: Montserrat,sans-serif
+          font-size: 15px
+          margin-left: -30px
+          margin-top: 15px
+
+      h2:nth-child(4)
+        &::before
+          content: '+'
+          position: absolute
+          color: #FECC19
+          font-family: Montserrat,sans-serif
+          font-size: 40px
+          font-weight: lighter
+          margin-left: -30px
+          margin-top: -10px
+  .menuSelectInfo:nth-child(2)
+      .selectInfo
+        h2::after
+          content: ''
+          position: absolute
+          width: 600px
+          background: #E0E0E0
+          height: 1.5px
+          margin-top: 100px
+          margin-left: -70px
+        h2
+          &:nth-child(1)::before
+            content: 'IV'
+            position: absolute
+            color: #FECC19
+            font-family: Montserrat,sans-serif
+            font-size: 15px
+            margin-left: -30px
+            margin-top: 15px
+
+          &:nth-child(2)::before
+            content: 'V'
+            position: absolute
+            color: #FECC19
+            font-family: Montserrat,sans-serif
+            font-size: 15px
+            margin-left: -27px
+            margin-top: 15px
+
+          &:nth-child(3)::before
+            content: 'VI'
+            position: absolute
+            color: #FECC19
+            font-family: Montserrat,sans-serif
+            font-size: 15px
+            margin-left: -25px
+            margin-top: 15px
+
+          &:nth-child(4)::before
+            content: '*'
+            position: absolute
+            color: #FECC19
+            font-family: Montserrat,sans-serif
+            font-size: 40px
+            font-weight: lighter
+            margin-left: -25px
+            margin-top: -10px
+
+
+@media screen and (max-width: 1700px)
+  .menuSelectInfoContainer h2
+    font-size: 60px
