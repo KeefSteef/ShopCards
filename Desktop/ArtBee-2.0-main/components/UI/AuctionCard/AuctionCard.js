@@ -2,16 +2,16 @@ import React from 'react';
 import cls from '../../../styles/AuctionCard.module.sass'
 import Image from "next/image";
 
-const AuctionCard = ({imgSrc}) => {
+const AuctionCard = ({imgSrc, textInfo, id}) => {
     return (
         <div className={cls.auctionCardContainer}>
             <div className={cls.auctionCardTimerContainer}>
                 <div className={cls.auctionCardTimer}>
                     <div className={cls.imageContainer}>
-                        <Image className={cls.auctionCardImage} layout={'fill'}  objectFit={'cover'}  src={'/auctionBcg.png'}/>
+                        <Image className={cls.auctionCardImage} layout={'fill'}  objectFit={'cover'}  src={imgSrc}/>
                     </div>
                     <div className={cls.timerInfo}>
-                        <h2 className={cls.toFinishOrStart}>до кінця :</h2>
+                        <h2 className={cls.toFinishOrStart}>{textInfo}</h2>
                          <div className={cls.countDate}>
                              <div className={`count ${cls.countDateDays}`}>
                                  <p>05</p>
@@ -36,7 +36,7 @@ const AuctionCard = ({imgSrc}) => {
             <div className={cls.auctionCardInfoContainer}>
                 <div className={cls.auctionCardInfo}>
                     <div className={cls.auctionInfo}>
-                        <h3>Аукціон №1</h3>
+                        <h3>{`Аукціон №${id}`}</h3>
                         <p>Онлайн торг почнеться в Пт 19 11:00</p>
                     </div>
                     <div className={cls.auctionBtnContainer}>

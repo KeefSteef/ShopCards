@@ -7,8 +7,8 @@ const GeneralContacts = () => {
                 <Image className={cls.generalContactsBcg} layout={'fill'} src={'/categoryBack1.png'}/>
                 <div className={cls.generalContactsInfoContainer}>
                     <div className={cls.subInfoContainer}>
-                        <div className="subGif">
-                            {/*GIF*/}
+                        <div className={cls.subGif}>
+                            <Image quality={100} width={550} height={320} src={'/symbi.svg'}/>
                         </div>
                         <div className={cls.subInfo}>
                             <p>Подпишитесь на рассылку ArtBee</p>

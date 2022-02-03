@@ -27,14 +27,14 @@ const GeneralMenu = () => {
                             <Image width={100} height={70} src={'/whiteLogo.svg'}/>
                         </div>
                         <div onClick={() => setCurrentVariant('fadeOut')} className={cls.navbarCloseIcon}>
-                            <Image width={35} height={35} src={'/cross.svg'}/>
+                            <Image width={30} height={30} src={'/cross.svg'}/>
                         </div>
                     </nav>
                 </div>
                 <div className={cls.menuMainContainer}>
                     <div className={cls.menuGreetingsInfoContainer}>
                         <div className={cls.imgContainer}>
-                            <Image className={cls.noiseBcg} layout={'fill'}  src={'/noise.png'}/>
+                            <Image className={cls.noiseBcg} layout={'fill'}  src={'/oise.png'}/>
                         </div>
                         <div className={cls.menuGreetingsInfo}>
                             <div className={cls.greetingsText}>

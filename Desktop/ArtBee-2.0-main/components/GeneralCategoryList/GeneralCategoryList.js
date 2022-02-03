@@ -7,7 +7,6 @@ const GeneralCategoryList = () => {
     return (
         <div className={cls.categoryListContainer}>
             <Image className={cls.backImgFirst} layout={'fill'} src={'/categoryBack1.png'} />
-            {/*<div className={cls.categoryListBorder}/>*/}
             <div className={cls.choiceCategoriesContainer}>
                 <div className={cls.choiceTitle}>
                     <h2>Обрані категорії</h2>
