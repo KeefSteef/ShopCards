@@ -41,6 +41,7 @@ $l: 15em;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   background: #353535;
   cursor: pointer;
   @include rounded-hex($rotated: true);

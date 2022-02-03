@@ -31,7 +31,7 @@ const GeneralAuctionList = () => {
                 <div className={cls.auctionList}>
                     {dataOfAuctionCard?.map((card, i) => {
                         const {textInfo, img} = card
-                        return <AuctionCard textInfo={textInfo} imgSrc={img} id={i + 1}/>
+                        return <AuctionCard key={'aucCard' + i} textInfo={textInfo} imgSrc={img} id={i + 1}/>
                     })}
                 </div>
             </div>
