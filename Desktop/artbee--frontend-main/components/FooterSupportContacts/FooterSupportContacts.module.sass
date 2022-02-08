@@ -1,0 +1,223 @@
+@import "./styles/mixins"
+
+.footerSupportContacts
+  width: 100%
+  background: #FECC19
+  display: flex
+  justify-content: space-between
+  height: 300px
+
+.footerFirstIconsList
+  width: 200px
+  display: flex
+  align-content: space-around
+  justify-content: space-around
+  flex-direction: column
+  position: relative
+  .beeIcon
+    width: 70px
+    height: 70px
+    position: relative
+    background-repeat: no-repeat
+  .beeIcon:nth-child(1)
+    left: 30px
+    bottom: 10px
+  .beeIcon:nth-child(2)
+    left: 0px
+    bottom: 0px
+  .beeIcon:nth-child(3)
+    left: 70px
+    top: 10px
+
+.footerTitle
+  width: 35%
+  font-size: 25px
+  line-height: normal
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin-bottom: 50px
+  margin-right: 100px
+  font-family: 'Montserrat', sans-serif
+  color: #000
+  h2
+    max-width: 456px
+  span
+    color: rgba(0,0,0,0.2)
+
+.footerDesc
+  width: 50%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  p
+    font-family: Montserrat
+    font-size: 16px
+    font-weight: 400
+    max-width: 652px
+  button
+    margin-top: 30px
+    border: solid 1px black
+    background: none
+    font-weight: normal
+    font-size: 14px
+    letter-spacing: 0.5px
+    font-weight: 500
+    cursor: pointer
+    text-transform: uppercase
+    padding: 12px 15px
+    font-family: Roboto
+    border-radius: 3px
+
+.footerSecondIconsList
+  width: 500px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  .beeIcon
+    position: relative
+    background-repeat: no-repeat
+  .beeIcon:nth-child(1)
+    width: 150px
+    height: 150px
+    bottom: 0px
+    left: 100px
+  .beeIcon:nth-child(2)
+    width: 40px
+    height: 40px
+    bottom: 0px
+  .beeIcon:nth-child(3)
+    align-self: flex-end
+    width: 70px
+    height: 70px
+    bottom: 0px
+  .beeIcon:nth-child(4)
+    width: 70px
+    height: 70px
+    bottom: 25px
+    left: 150px
+    align-self: flex-start
+
+
+@media screen and (max-width: 1705px)
+  .footerSecondIconsList
+    width: 400px
+    .beeIcon:nth-child(1)
+        width: 100px
+        height: 100px
+        bottom: 0px
+        left: 100px
+    .beeIcon:nth-child(2)
+        width: 40px
+        height: 40px
+        bottom: 0px
+    .beeIcon:nth-child(3)
+        align-self: flex-end
+        width: 70px
+        height: 70px
+        bottom: 0px
+    .beeIcon:nth-child(4)
+        width: 70px
+        height: 70px
+        bottom: 25px
+        left: 150px
+        align-self: flex-start
+
+
+@media screen and (max-width: 1645px)
+  .footerSecondIconsList
+    width: 380px
+    .beeIcon:nth-child(1)
+      width: 100px
+      height: 100px
+      bottom: 0px
+      left: 67px
+
+@media screen and (max-width: 1300px)
+  .footerSecondIconsList
+    width: 50%
+  .footerTitle
+    h2
+      font-size: 30px
+
+
+@media screen and (max-width: 1000px)
+  .footerSupportContacts
+    padding: 40px
+    width: auto
+    flex-direction: column
+    height: 100%
+    h2
+      min-width: 400px
+  .footerFirstIconsList
+    display: none
+  .footerSecondIconsList
+    width: 400px
+    position: absolute
+    left: 45%
+
+
+@media screen and (max-width: 737px)
+  .footerSecondIconsList
+    width: 400px
+    position: absolute
+    left: 35%
+
+
+@media screen and (max-width: 610px)
+  .footerSecondIconsList
+    width: 400px
+    position: absolute
+    left: 30%
+    margin-top: 100px
+
+@media screen and (max-width: 569px)
+  .footerSecondIconsList
+    width: 300px
+    position: absolute
+    transform: scale(0.8)
+    left: 35%
+    margin-top: 100px
+
+  .footerSupportContacts
+    p
+      font-size: 14px
+
+
+
+
+@media screen and (max-width: 470px)
+  .footerSupportContacts
+    overflow: hidden
+    h2
+      width: 100%
+      min-width: min-content
+      font-size: 25px
+    .footerDesc
+      width: 100%
+    .footerSecondIconsList
+      width: 50px
+      opacity: 0.3
+      position: absolute
+      margin-top: 50px
+      transform: scale(1.5)
+      .beeIcon
+        display: none
+      .beeIcon:nth-child(1)
+        display: block
+        width: 110px
+        left: 100px
+
+
+@media screen and (max-width: 400px)
+    .footerSecondIconsList
+      .beeIcon:nth-child(1)
+        top: 150px
+        left: 80px !important
+
+@media screen and (max-width: 365px)
+  .footerSecondIconsList
+    .beeIcon
+      display: none !important

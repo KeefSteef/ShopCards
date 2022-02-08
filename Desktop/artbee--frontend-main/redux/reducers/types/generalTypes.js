@@ -1,0 +1,4 @@
+export const SHOW_MENU_TOGGLE = 'SHOW_MENU_TOGGLE';
+export const HIDE_MENU_TOGGLE = 'HIDE_MENU_TOGGLE';
+export const SHOW_LOADER_TOGGLE = 'SHOW_LOADER_TOGGLE';
+export const IS_LOGGED = 'IS_LOGGED';

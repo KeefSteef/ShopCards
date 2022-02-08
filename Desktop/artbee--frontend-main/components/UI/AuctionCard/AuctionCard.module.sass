@@ -1,0 +1,113 @@
+@import "styles/mixins"
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap')
+
+.auctionCardContainer
+  margin: 40px
+  z-index: 20
+
+.auctionCardTimer
+  width: 625px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 250px
+  position: relative
+  cursor: pointer
+  &:hover
+    .auctionCardImage
+      filter: brightness(0.2) contrast(0.8)
+
+.auctionCardInfo
+  display: flex
+  justify-content: space-between
+
+.auctionCardInfo::after
+  width: 634px
+  content: ''
+  position: absolute
+  margin-top: 80px
+  height: 2px
+  background: #939597
+
+.auctionCardImage
+  transition: .4s
+  filter: brightness(0.4) contrast(0.8)
+  border-radius: 10px
+
+.timerInfo
+  color: #ffffff
+  flex-direction: column
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+
+.countDate
+  display: flex
+  font-family: 'Poppins', sans-serif
+
+  div
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 30px
+    font-family: 'Poppins', sans-serif
+    font-weight: lighter
+
+    p:nth-child(1)
+      font-size: 30px
+    p:nth-child(2)
+      margin-top: 5px
+      font-size: 12px
+      font-weight: 250
+
+  div:not(:last-child)::before
+    content: ':'
+    font-size: 30px
+    position: relative
+    left: 50px
+    top: 40px
+
+  div:last-child
+    top: 22px
+    position: relative
+
+.toFinishOrStart
+  font-weight: bold
+  font-family: Montserrat
+  position: relative
+  top: 40px
+
+.imageContainer
+  position: relative
+  width: 630px
+  height: 250px
+  border-radius: 10px
+
+.auctionInfo
+  h3
+    font-size: 24px
+    font-weight: bold
+  h3,p
+    font-family: Montserrat
+  p
+    font-size: 13px
+
+.auctionBtn
+  cursor: pointer
+  text-decoration: none
+  font-family: 'Roboto'
+  text-transform: uppercase
+  color: #FECC19
+  border-radius: 3px
+  background: #353535
+  padding: 10px 30px
+
+.auctionBtnContainer
+  display: flex
+  justify-content: center
+  align-items: center
+
+.auctionCardInfoContainer
+  margin-top: 30px

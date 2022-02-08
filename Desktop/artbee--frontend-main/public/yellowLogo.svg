@@ -1,0 +1,30 @@
+<svg width="122" height="38" viewBox="0 0 122 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_3254_3377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="103" y="0" width="19" height="15">
+<rect x="103" y="7.02832" width="1.47884" height="12.4842" transform="rotate(-52.5 103 7.02832)" fill="#FECC19"/>
+<rect x="105.465" y="5.05664" width="1.47884" height="12.4842" transform="rotate(-52.5 105.465 5.05664)" fill="#FECC19"/>
+<rect x="107.929" y="3.08496" width="1.47884" height="12.4842" transform="rotate(-52.5 107.929 3.08496)" fill="#FECC19"/>
+<rect x="110.394" y="1.17285" width="1.47884" height="12.4842" transform="rotate(-52.5 110.394 1.17285)" fill="#FECC19"/>
+</mask>
+<g mask="url(#mask0_3254_3377)">
+<circle cx="112.39" cy="7.34114" r="6.01888" fill="#FECC19"/>
+</g>
+<path d="M65.7452 22.427C64.9306 22.4454 63.8263 22.4104 63.2196 22.3933C64.055 22.3933 64.6086 22.427 65.7452 22.427Z" fill="#FECC19"/>
+<path d="M61 20.3483V11C62.9231 11 63.1543 11 65.756 11C69.5609 11.1993 71.7805 13.5364 71.7805 16.8427C71.7805 20.3923 69.9255 22.0326 66.3859 22.3933C65.6486 22.4684 64.0109 22.4156 63.2196 22.3933C64.055 22.3933 64.6086 22.427 65.7452 22.427C70.0137 22.8152 74 24.4944 74 29.6966C74 34.6364 70.5952 37 66.7072 37C64.1706 37 63.2227 37 61 37C60.9999 32.618 61 21.7161 61 21.7161" stroke="#FECC19" stroke-width="2"/>
+<path d="M88 11H79V18.0112H81.4M79 19.764V37H88" stroke="#FECC19" stroke-width="2"/>
+<path d="M102 11H93V18.0112H95.4M93 19.764V37H102" stroke="#FECC19" stroke-width="2"/>
+<mask id="mask1_3254_3377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="7" width="21" height="32">
+<path d="M2 37.4813L10.7274 10.6973L19.4547 37.4813" stroke="#FECC19" stroke-width="2" stroke-linecap="square"/>
+</mask>
+<g mask="url(#mask1_3254_3377)">
+<rect x="-2.31641" y="8.0918" width="23.6774" height="29.0944" fill="#FECC19" stroke="#FECC19"/>
+</g>
+<mask id="mask2_3254_3377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="24" y="9" width="15" height="30">
+<path d="M25.8718 20.3282V10.698C29.7841 10.1965 37.0068 11.5051 37.0068 20.3282C37.0068 26.2514 33.9973 28.0571 32.1916 29.0556M25.8718 29.9585C28.2794 29.9585 30.2865 29.9749 32.1916 29.0556M32.1916 29.0556L37.0068 37.4821" stroke="#FECC19" stroke-width="2" stroke-linecap="square"/>
+</mask>
+<g mask="url(#mask2_3254_3377)">
+<rect x="19.751" y="8.09277" width="23.6774" height="29.0944" fill="#FECC19" stroke="#FECC19"/>
+</g>
+<path d="M56 11H49.2778M45 11H49.2778M49.2778 11V38" stroke="#FECC19" stroke-width="2"/>
+<rect x="43" y="10" width="1" height="2" fill="#FECC19"/>
+<rect x="41" y="10" width="1" height="2" fill="#FECC19"/>
+</svg>
