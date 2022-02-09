@@ -1,0 +1,53 @@
+.nftTab
+  width: 100%
+
+.nftTabContainer
+  display: flex
+  width: 90%
+  justify-content: space-between
+  border-top: 1px #E0E0E0 solid
+  border-bottom: 1px #E0E0E0 solid
+  font-family: Montserrat
+  padding: 61px 0px 83px 0px
+
+.nftTabRightContent
+  margin-right: 100px
+  p
+    max-width: 530px
+    font-size: 14px
+
+
+.nftTabLeftContent
+  font-size: 24px
+  h3
+    max-width: 500px
+
+
+@media screen and (max-width: 1380px)
+  .nftTabRightContent
+    margin-right: 0px
+  .nftTabContainer
+    width: 100%
+
+@media screen and (max-width: 1200px)
+  .nftTabContainer
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    p,h3
+      text-align: center
+    p
+      margin-top: 30px
+
+@media screen and (max-width: 600px)
+  .nftTabContainer
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    p,h3
+      text-align: left
+    p
+      margin-top: 30px
+  .nftTabLeftContent
+    h3
+      font-size: 18px

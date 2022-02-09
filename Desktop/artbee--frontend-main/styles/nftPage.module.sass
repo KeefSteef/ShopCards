@@ -1,0 +1,100 @@
+@import "mixins"
+.imgContainer
+  span
+    z-index: -1
+.nftInfo
+  padding: 171px 120px 0 120px
+
+.nftInfoContainer
+  font-family: Montserrat
+  h2
+    font-size: 48px
+
+.nftInfoParagraphs
+  margin-top: 64px
+  p
+    font-weight: 400
+    color: #000000
+    margin-top: 34px
+
+  p:nth-child(1)
+    max-width: 770px
+
+  p:nth-child(2)
+    max-width: 1000px
+
+.nftDescContainer
+  margin-top: 140px
+
+.nftBtns
+  margin-top: 100px
+
+.nftBtnsContainer
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  button
+    margin: 30px
+    width: 200px
+    border: solid 1.5px #000
+    padding: 10px
+    font-size: 14px
+    cursor: pointer
+    transition: .3s
+    @include defaultButton
+
+  button:nth-child(2)
+    &:hover
+      border: solid 1.5px #FECC19
+      box-shadow: 0px 3px 20px rgba(255, 168, 0, 0.4)
+      background: #FECC19
+
+  button:nth-child(1)
+    font-weight: normal
+    background: #FECC19
+    border: solid 1.5px #FECC19
+    &:hover
+      border: solid 1.5px #FECC19
+      box-shadow: 0px 3px 20px rgba(255, 168, 0, 0.4)
+      background: #fff
+
+
+.nftFooter
+  margin-top: 100px
+
+
+@media screen and (max-width: 700px)
+  .nftBtnsContainer
+    button
+      font-size: 12px
+
+@media screen and (max-width: 600px)
+  .nftBtnsContainer
+    button
+      margin: 20px
+      font-size: 10px
+  .nftInfo
+    padding: 171px 80px 0 80px
+
+@media screen and (max-width: 500px)
+  .nftInfo
+    padding: 171px 40px 0 40px
+
+@media screen and (max-width: 420px)
+  .nftInfo
+    padding: 171px 20px 0 20px
+
+@media screen and (max-width: 380px)
+  .nftInfo
+    padding: 171px 20px 0 20px
+  .nftBtnsContainer
+    flex-direction: column
+    button
+      margin: 10px
+
+@media screen and (max-width: 354px)
+  .nftBtnsContainer
+    button
+      margin: 15px
+      font-size: 10px
