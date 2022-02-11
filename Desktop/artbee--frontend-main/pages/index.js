@@ -17,7 +17,7 @@ const Index = () => {
           <div>
               {showLoaderMenuState && <Loader/>}
               {menuShowToggle && <GeneralMenu/> }
-              <GeneralHeader/>
+              <GeneralHeader logoColor={'dark'}/>
               <GeneralMain/>
               <GeneralFooter/>
           </div>

@@ -7,7 +7,7 @@ const ArtCard = ({artImgLink, artName, authorName, year, price }) => {
         <div>
             <div className={cls.artCardContainer}>
                 <div className={cls.artImageContainer}>
-                    <Image className={cls.artImg} objectFit={'none'} layout={'fill'} quality={100} src={artImgLink}/>
+                    <Image className={cls.artImg} objectFit={'none'} layout={'fill'} quality={75} src={artImgLink}/>
                 </div>
                 <div className={cls.artInfoContainer}>
                     <div className={cls.artDescContainer}>

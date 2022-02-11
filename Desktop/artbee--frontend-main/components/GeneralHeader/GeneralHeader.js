@@ -4,7 +4,7 @@ import {toggleShowMenu} from "../../redux/reducers/actions/generalActions";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
-const GeneralHeader = () => {
+const GeneralHeader = ({ logoColor }) => {
 
     const dispatch = useDispatch();
     const isLogged = useSelector(state => state.global.isLogged);
@@ -13,7 +13,7 @@ const GeneralHeader = () => {
         <div className={cls.navbar}>
             <nav className={cls.nav}>
                 <div className={cls.logo}>
-                    <Image width={94} height={50} src={'/logo.svg'}/>
+                    <Image width={94} height={50} src={logoColor === 'dark' ? '/logo.svg' : '/whiteLogo.svg'}/>
                 </div>
                 <div className={cls.btnContainer}>
                     {!isLogged ?

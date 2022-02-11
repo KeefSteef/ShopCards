@@ -13,10 +13,10 @@ const NftPage = () => {
 
     return (
         <div className={cls.nftPage}>
-            <GeneralHeader/>
+            <GeneralHeader logoColor={'dark'}/>
             {menuShowToggle && <GeneralMenu/>}
             <div className={cls.imgContainer}>
-                <Image className={cls.nftBackImg} objectFit={'cover'} src={'/nftBack.png'} layout={'fill'} />
+                <Image className={cls.nftBackImg} src={'/nftBack.png'} layout={'fill'} />
             </div>
             <div className={cls.nftInfo}>
                 <div className={cls.nftInfoContainer}>

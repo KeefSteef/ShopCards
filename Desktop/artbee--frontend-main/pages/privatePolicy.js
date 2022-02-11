@@ -10,10 +10,9 @@ const PrivatePolicy = () => {
     const menuShowToggle = useSelector(state => state.general.showMenuToggle)
 
     return (
-
         <div>
             {menuShowToggle && <GeneralMenu/> }
-            <GeneralHeader/>
+            <GeneralHeader logoColor={'dark'}/>
             <div className={cls.privatePolicyInfo}>
                 <div className={cls.privatePolicyInfoContainer}>
                     <div className={cls.privatePolicyTitle}>
