@@ -1,0 +1,20 @@
+.productionContainer
+  width: 100%
+  min-height: 100vh
+
+.productionBcgContainer
+  height: 300px
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 300px
+    background: white
+    z-index: 5
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+
+.productionInfoContainer
+  font-family: Montserrat
+  font-size: 30px
+  padding-left: 135px

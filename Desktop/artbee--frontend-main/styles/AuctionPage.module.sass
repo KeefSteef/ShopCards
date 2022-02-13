@@ -1,0 +1,380 @@
+@import "mixins"
+
+.auctionPageHome
+  width: 100%
+  position: relative
+  min-height: 90vh
+  //border: solid 2px red
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 10
+  &::before
+    position: absolute
+    width: 100%
+    height: 100vh
+    //margin-top: 200px
+    z-index: 3
+    content: ''
+    background: white
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to bottom, rgba(0,0,0,0.01), rgba(0,0,0,0))
+
+
+.auctionBcgContainer
+  width: 100%
+  height: 100vh
+  position: absolute
+  span
+    z-index: -1
+
+.auctionPageScroll
+  position: absolute
+  z-index: 10
+  left: 0
+  margin-bottom: 100px
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: flex-end
+
+.auctionPageHome
+  //border: solid 2px red
+  height: 100vh
+  z-index: 5
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+.auctionPageHomeInfo
+  display: flex
+  position: relative
+  z-index: 10
+  font-family: Montserrat
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.auctionPageScrollContainer
+  position: relative
+  padding: 26px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  p
+    margin-top: 30px
+    color: #BDBDBD
+    text-transform: uppercase
+    font-family: Montserrat
+    font-weight: bold
+
+.auctionPageHomeTitleContainer
+  padding-top: 80px
+  h2
+    line-height: 120px
+    font-size: 96px
+    color: #333333
+    text-transform: uppercase
+    text-align: center
+    span
+      color: #FECC19
+
+
+.auctionPageBtn
+  padding-top: 75px
+  button
+    cursor: pointer
+    width: 200px
+    transition: .3s
+
+    @include defaultButton
+  button:nth-child(1), button:nth-child(2)
+    padding: 10px 20px
+    font-weight: 500
+
+  button:nth-child(1)
+    background: #FECC19
+    box-shadow: 0px 3px 20px rgba(255, 168, 0, 0.4)
+    border: solid 1px #FECC19
+    &:hover
+      background: white
+
+  button:nth-child(2)
+    margin-left: 30px
+    border: solid 1px #000
+    &:hover
+      border: solid 1px #FECC19
+      background: #FECC19
+      box-shadow: 0px 3px 20px rgba(255, 168, 0, 0.4)
+
+
+.progressBar
+  overflow: hidden
+  height: 100px
+  background: rgb(210,210,210)
+  width: 3px
+
+.runner
+  width: 30px
+  height: 30px
+  background: #4F5A6A
+  animation: runnBar 2s infinite
+
+
+@keyframes runnBar
+  0%,100%
+    transform: translateY(90px)
+
+  50%
+    transform: translateY(-15px)
+
+.auctionPageMain
+  padding: 0px 223px
+
+.auctionPageFirstDesc, .auctionPageSecondDesc
+  display: flex
+  width: 100%
+  font-family: Montserrat
+  h3
+    padding-bottom: 36px
+    color: #FECC19
+    width: 100%
+    font-size: 36px
+
+
+.auctionPageSecondDescContainer, .auctionPageFirstDescContainer
+  width: 100%
+
+.auctionPageSecondDescTitle, .auctionPageFirstDescTitle
+  border-bottom: 2px #E0E0E0 solid
+
+.auctionPageMainContainer
+  display: flex
+  flex-direction: column
+
+.auctionPageFirstDescInfoContainer, .auctionPageSecondDescInfoContainer
+  display: flex
+  justify-content: space-between
+  width: 100%
+  .auctionDesc
+    margin-top: 50px
+    h4
+      font-size: 24px
+      font-weight: bold
+    p
+      margin-top: 50px
+      max-width: 300px
+      line-height: 20px
+.auctionPageSecondDesc
+  margin-top: 80px
+  h3
+    max-width: 622px
+
+.auctionPageSecondDescTitle
+  display: flex
+  justify-content: flex-start
+  align-items: flex-end
+
+
+.titleImgContainer
+  position: relative
+  display: flex
+  margin-left: 100px
+  justify-content: center
+  align-items: center
+
+.auctionPageSecondDesc
+  h3
+    padding-bottom: 75px
+
+.auctionPageSecondDescInfo
+  padding-bottom: 150px
+
+
+@media screen and (max-width: 1612px)
+  .auctionDesc
+    max-width: 400px
+  .auctionPageFirstDescInfoContainer
+    .auctionDesc:nth-child(2)
+      margin-left: 50px
+
+@media screen and (max-width: 1612px)
+  .auctionPageMain
+    padding: 0 80px
+  .auctionPageSecondDesc
+    margin-top: 0
+
+@media screen and (max-width: 1400px)
+  .titleImgContainer
+    margin-left: 0
+
+@media screen and (max-width: 1250px)
+  .titleImgContainer
+    margin-left: -51px
+    right: 53px
+
+  .auctionPageMain
+    .auctionDesc
+      h4
+        font-size: 20px
+
+@media screen and (max-width: 1100px)
+  .auctionDesc
+    p
+      font-size: 14px
+  .auctionPageSecondDescInfoContainer
+    .auctionDesc
+      max-width: 250px
+
+@media screen and (max-width: 980px)
+
+  .auctionPageHomeTitleContainer
+    h2
+      font-size: 70px
+
+  .auctionPageMain
+    margin-top: 50px
+
+  .titleImgContainer
+    margin-left: -51px
+    right: 80px
+
+  .auctionPageSecondDescInfoContainer, .auctionPageFirstDescInfoContainer
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .auctionDesc
+      margin-left: 0 !important
+      max-width: 100%
+      display: flex
+      justify-content: flex-start
+      flex-direction: column
+      justify-content: flex-start
+      width: 100%
+      p
+        max-width: 100%
+
+  .auctionPageSecondDescTitle
+    flex-direction: column-reverse
+
+  .auctionPageSecondDesc
+    h3
+      max-width: 100%
+
+  .titleImgContainer
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    //border: solid 2px red
+    padding-bottom: 50px
+    right: 0
+    span
+      right: 80px
+
+@media screen and (max-width: 588px)
+  .auctionPageHomeTitleContainer
+    h2
+      font-size: 60px
+      span
+        position: relative
+        bottom: 20px
+
+
+  .auctionPageScrollContainer
+      transform: scale(.7)
+      position: relative
+      top: 60px
+      padding: 20px
+
+@media screen and (max-width: 550px)
+  .auctionPage
+    .auctionPageSecondDescTitle
+      h3
+        font-size: 28px
+
+@media screen and (max-width: 500px)
+  .auctionPageMain
+    padding: 0 30px
+
+  .auctionPageHomeTitleContainer
+      h2
+        font-size: 55px
+        span
+          bottom: 40px
+
+  .auctionPageBtn
+    flex-direction: column
+    display: flex
+    padding-top: 0
+    justify-content: center
+    align-items: center
+    button
+      margin-left: 0 !important
+      margin-top: 20px
+
+
+@media screen and (max-width: 450px)
+  .titleImgContainer
+    span
+      right: 70px
+
+@media screen and (max-width: 382px)
+  .auctionPageSecondDescTitle
+    h3
+      font-size: 25px !important
+
+@media screen and (max-width: 360px)
+  .auctionPageFirstDescTitle
+    h3
+      font-size: 31px
+
+@media screen and (max-width: 330px)
+
+  .auctionPageHomeTitleContainer
+    h2
+      font-size: 38px !important
+
+  .auctionPageSecondDescTitle
+    h3
+      font-size: 22px !important
+  .titleImgContainer
+
+
+@media screen and (max-width: 450px)
+  .auctionPage
+    .auctionPageHomeTitleContainer
+      h2
+        font-size: 50px
+    .auctionPageHome
+      button
+        font-size: 13px
+
+  .auctionPageScrollContainer
+    padding: 20px
+
+
+@media screen and (max-width: 410px)
+  .auctionPage
+    .auctionPageHomeTitleContainer
+      h2
+        font-size: 45px
+    .auctionPageHome
+      button
+        font-size: 12px
+        width: 180px
+        padding: 7px 10px
+    .auctionPageScroll
+      height: 100vh
+
+
+@media screen and (max-height: 750px)
+  .auctionPageScrollContainer
+    top: 80px
+    transform: scale(0.6)
+
+@media screen and (max-height: 600px)
+  .auctionPageScrollContainer
+    top: 50px
+    padding: 0
